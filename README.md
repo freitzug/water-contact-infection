@@ -4,6 +4,8 @@ This document details how to rerun the analysis pipeline described in:
 
 Reitzug, F., Kabatereine, N.B., Byaruhanga, A.M. et al. Current water contact and *Schistosoma mansoni* infection have distinct determinants: a data-driven population-based study in rural Uganda. *Nat Commun* 15, 9530 (2024). https://doi.org/10.1038/s41467-024-53519-4
 
+Data to run this code is available here: https://doi.org/10.25446/oxford.26977897.
+
 ## **System requirements**
 
 This code was run on the University of Oxford high-performance Biomedical Research Computing (BMRC) computing cluster on August 24, 2024 on 1 CPU core with 24 GB RAM (approximate run time 24 hours).
