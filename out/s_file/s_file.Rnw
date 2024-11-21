@@ -1,0 +1,216 @@
+
+\documentclass{article}
+
+%packages
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[headsep=0pt,% remove space between header and text body
+            headheight=17pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage{dcolumn}
+\usepackage{rotating}
+\usepackage[american]{babel}
+\usepackage{Sweave}
+\usepackage{tcolorbox}
+\usepackage{pdflscape}
+\usepackage[utf8]{inputenc}
+\usepackage{alltt}
+\usepackage{enumitem}
+\usepackage{tcolorbox}
+\usepackage{times}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+%Document layout --------------------------------------------------------
+  \geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\rfoot{Page \thepage}
+
+
+%title
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+% Title Page
+\title{\textbf{Supplement for: Current water contact and \emph{Schistosoma mansoni} infection have distinct determinants: a data-driven population-based study in rural Uganda}}
+\author{Fabian Reitzug$^1$, Narcis B. Kabatereine$^2$, Anatol M. Byaruhanga$^2$, Fred Besigye$^2$, Betty Nabatte$^2$, \\Goylette F. Chami$^1$$^*$}
+\date{}
+\maketitle
+
+\noindent $^1$ Big Data Institute, Nuffield Department of Population Health, University of Oxford, Oxford, United Kingdom
+
+\noindent $^2$ Division of Vector-Borne and Neglected Tropical Diseases Control, Uganda Ministry of Health, Kampala, Uganda \\
+\\
+\noindent $^*$ Corresponding author \par
+\noindent E-mail: goylette.chami@ndph.ox.ac.uk
+
+% Table of Contents
+\tableofcontents
+
+% Table of Figures
+\listoftables
+\listoffigures
+\newpage
+
+% Body of the Document
+
+%Tables  --------------------------------------------------------
+
+\begin{landscape}
+  \section{Supplementary Tables}
+  \input{../../out/s_tabs/tab_1.tex}
+\end{landscape}
+\input{../../out/s_tabs/tab_2.tex}
+\input{../../out/s_tabs/tab_3.tex}
+\input{../../out/s_tabs/tab_4.tex}
+\input{../../out/s_tabs/tab_5.tex}
+\input{../../out/s_tabs/tab_6.tex}
+\input{../../out/s_tabs/tab_7.tex}
+
+%Figures  --------------------------------------------------------
+\newpage
+\section{Supplementary Figures}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\linewidth]{../../out/s_figs/s_fig1}
+  \caption[Distribution of water contact frequency and duration]{\textbf{A.} Distribution of water contact frequency among all participants. \textbf{B.} Distribution of water contact duration among all participants. \textbf{C.} Distribution of water contact frequency among participants with water contact only. \textbf{D.} Distribution of water contact duration among participants with water contact only. Dashed vertical line = median.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig2}
+  \caption[Distribution of water contact and participants over distance to water sites]{Cumulative proportion of all water contacts/participants by household distance to the closest water site (n=2867). The vertical line shows the distance threshold where 80\% of all individuals with water contact lived which is within 0.43 km from the shoreline. By comparison 74.3\% of the overall study population lived within 0.43 km from the shoreline.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig3}
+  \caption[Variation in water contact over gender and age]{Generalised additive model predicting the proportion of participants with water contact over age and gender.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{landscape}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig4}
+  \caption[Model of water contact with occupation or gender removed]{Logistic regression model predicting water contact (main model shown in Fig. 7) versus the same model with the occupation variable removed and gender removed, respectively (n=2867 for all models). Standard errors clustered at the household level. Abbreviations: OR = odds ratio. CI = confidence interval.}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig5}
+  \caption[Models of occupational, domestic, and recreational water contact]{Results from seperate logistic regression models with standard errors clustered at the household level predicting domestic, occupational, and recreational water contact among participants that do not engage in multiple types of water contact (n=2684). As not all categories in the water site type and the occupation variables were sufficiently represented in the recreational water contact model, we removed these two variables when predicting recreational water contact. Abbreviations: OR = odds ratio. CI = confidence interval.}
+  %\label{fig:example}
+\end{figure}
+
+\end{landscape}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig6}
+  \caption[Model of water contact frequency]{Negative binomial regression model predicting water contact frequency among all participants (n=2867). Standard errors clustered at the household level. A zero inflation test suggested that the predicted number of zeros (1440) was not significantly different from the number of observed zeros (1528), ratio=0.94, at the default tolerance of 0.1 of the \texttt{check\_zeroinflation} function in the R package \texttt{performance}. Abbreviations: OR = odds ratio. CI = confidence interval.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig7}
+  \caption[Model of water contact duration]{Negative binomial regression model predicting water contact duration among all participants (n=2867). Standard errors clustered at the household level. A zero inflation test suggested that the predicted number of zeros (1479) was not significantly different from the number of observed zeros (1568), ratio=0.94, at the default tolerance of 0.1 of the \texttt{check\_zeroinflation} function in the R package \texttt{performance}. Abbreviations: OR = odds ratio. CI = confidence interval.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig8}
+    \caption[Variation in infection by water contact and age]{Generalised additive model predicting the proportion of participants with \emph{S. mansoni} infection by water contact status and age (i.e., comparing infection outcomes in participants with current water contact vs participants without current water contact over age, n=2867).}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig9}
+  \caption[Variation in water contact and infection over waterbody distance]{Generalised additive model predicting the proportion of participants with \emph{S. mansoni} infection and heavy infection (400+ eggs per gram of stool, by Kato-Katz micrsocopy) as well as the proportion of participants with water contact over household distance to the closest water site (n=2867).}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig10}
+  \caption[Model of infection intensity]{Zero-inflated negative binomial regression model predicting \emph{S. mansoni} infection intensity among all participants (n=2867). Intensity from Kato-Katz, measured in eggs per gram of stool. Standard errors clustered at the household level. A zero inflation test suggested that the predicted number of zeros (1531) was not significantly different from the number of observed zeros (1531), ratio=0.94, at the default tolerance of 0.1 of the \texttt{check\_zeroinflation} function in the R package \texttt{performance}. Abbreviations: OR = odds ratio. CI = confidence interval.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig11}
+  \caption[Comparison of self-reported and direct observation data]{Comparison of age distribution in self-reported data with age distribution of direct observation data in 12 villages with both observation and survey data (survey data n=605 and direct observation n=13,515). Proportions represent the proportion of all water contacts which occur in each age group. Age groups were based on the categories used for MDA treatment and used because direct observation was conducted using these age groups. Whiskers represent 95\% confidence intervals obtained using bootstrapping with 1000 repeats.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{landscape}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig12}
+    \caption[Sensitivity to infection outcome used]{Seperate logistic regression model predicting infection status based on Kato-Katz as well as reclassified Kato-Katz (where participants were recoded as infected whenever Kato-Katz infection status was negative but when the more sensitive POC-CCA diagnostic (positive band 1-3) indicated an infection, n=2867). Standard errors clustered at the household level. Abbreviations: OR = odds ratio. CI = confidence interval.}
+  %\label{fig:example}
+\end{figure}
+
+\end{landscape}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.65\linewidth]{../../out/s_figs/s_fig13}
+    \caption{Participant flow diagram}
+  %\label{fig:example}
+\end{figure}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\linewidth]{../../out/s_figs/s_fig14}
+    \caption[Comparison of BAS and LRT results by variable types and levels]{Comparison of variable selection results from BVS and LRTs for predicting water contact. Panel \textbf{A} shows the percentage of selected variables from Bayesian variable selection (BVS, n=10 selected variables) and likelihood ratio tests (LRTs, n=10 selected variables) by type of variable. Variables selected using LRTs were solely socio-demographic and environmental variables, while BAS also selected water, sanitation, and hygiene (WASH) and biomedical variables. Among socio-demographic variables, age, age$^2$, gender, and occupation were consistently selected by BAS and LRTs. Current school enrolment status and educational attainment were only selected by LRT. Among environmental variables, contamination at the closest water site and presence of a water site within the village consistently selected. Distance variables were only selected by LRTs (household distance to closest water site and village centre distance). BVS selected distance to the closest public latrine, the type of site closest to the household, contamination at the closest site, and village-level infection prevalence. No WASH variables were selected via LRT. In BVS, the WASH variables number of latrines per village and proportion of households using an improved drinking water source were selected. Panel \textbf{B} compares selected variables from BVS and LRTs by level. In LRTs, 60\% of selected variables were individual level, while the same figure was 40\% for BAS. The proportion of village-level variables was twice as high in the BVS variable set (20\%) compared to the set from LRTs (10\%).}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig15}
+  \caption[Model of infection with additional snail variables]{Logistic regression model predicting infection status among all participants using the main predictor variables plus a more extensive set of snail variables selected using Bayesian variable selection, see methods for details (n=2867). Standard errors clustered at the household level. Additional snail variables selected via BVS were distance to the closest water site with infected snails and the number of infected snails at the closest water site. Abbreviations: OR = odds ratio. CI = confidence interval.}
+  %\label{fig:example}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.99\linewidth]{../../out/s_figs/s_fig16}
+  \caption[Model of infection with additional water contact variables]{Logistic regression model predicting infection status among all participants using the main predictor variables plus a more extensive set of water contact variables selected using Bayesian variable selection, see methods for details (n=2867). The six additional granular water contact variables selected via BVS were years of residence in the village, time spent on fishing, getting drinking water, household-level swimming or playing, washing clothes with soap, household-level fishing, time spent on washing clothes with soap, and household-level getting drinking water. Abbreviations: OR = odds ratio. CI = confidence interval.}
+  %\label{fig:example}
+\end{figure}
+
+
+\end{document}
+
+
+
